@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://img.hotimg.com/1ef97f5ba533d7bd7.png" type="image/png">
+  <meta name="google-site-verification" content="azthnYNKg3HDplNjwJN9vymVU-P18dp3iyE3FNFKORc" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7905341714144701"
+     crossorigin="anonymous"></script>
+  <title>UR Frequency</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Ensure footer stays at the bottom */
+      background-color:black;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color:#333;
+      color: #fff;
+      position: relative;
+      z-index: 3; /* Ensure header stays on top */
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      animation: slideIn 2s ease-out;
+    }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      animation: logoAnimation 2s ease-in-out;
+    }
+
+    .nav-menu {
+      position: absolute;
+      top: 60px; /* Adjust based on header height */
+      left: 0;
+      background-color: #333;
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+      z-index: 3; /* Ensure the navigation menu appears above the container */
+    }
+
+    .nav-menu ul {
+      display: flex;
+      list-style: none;
+      flex-direction: column; /* Stack items vertically */
+      padding: 10px 20px;
+    }
+
+    .nav-menu ul li {
+      margin: 10px 0; /* Space between items */
+      opacity: 0; /* Initially hidden */
+      transform: translateX(-100%); /* Start from left */
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .nav-menu.open {
+      max-height: 300px; /* Increased height for more items */
+    }
+
+    .nav-menu.open ul li {
+      opacity: 1; /* Fade in */
+      transform: translateX(0); /* Slide in */
+    }
+
+    .nav-menu ul li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .nav-menu ul li a:hover {
+      color: #f4a261;
+    }
+
+    .menu-icon {
+      display: none;
+      font-size: 30px;
+      cursor: pointer;
+      z-index: 4; /* Ensure the menu icon remains clickable */
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-50%);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes logoAnimation {
+      from {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+        .container-text {
+            display:block;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 20px;
+        }.container-2 {
+            display:flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 20px;
+        }
+    /* Mobile view */
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: block; /* Ensure it is block for max-height to work */
+      }
+
+      .menu-icon {
+        display: block;
+      }
+    }
+
+    /* Footer styles */
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: auto; /* Push footer to the bottom */
+    }
+
+    .footer a {
+      color: #f4a261;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column; /* Stack h1 and p vertically */
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin: 0px;
+      background: linear-gradient(to right, black 40%, rgba(0, 0, 0, 0.7) 50%, transparent 60%), url('https://i.pinimg.com/736x/02/2a/53/022a53117588e268d2378ed76f4272f1.jpg');
+      background-size: cover;
+      background-position: right;
+      background-repeat: no-repeat;
+      position: relative;
+      padding: 20px;
+      color: white;
+      z-index: 1; /* Ensure the container is behind the navigation menu */
+    }
+
+    .container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 40%;
+      right: 60%;
+      background: inherit;
+      filter: blur(10px);
+      z-index: 0;
+    }
+.container2 {
+      display: flex;
+      flex-direction: column; /* Stack h1 and p vertically */
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin: 0px;
+      background: linear-gradient(to right, black 40%, rgba(0, 0, 0, 0.7) 50%, transparent 60%), url('https://i.pinimg.com/originals/9d/73/af/9d73af36e486def0f4c81aa372b8655c.gif');
+      background-size: cover;
+      background-position: right;
+      background-repeat: no-repeat;
+      position: relative;
+      padding: 20px;
+      color: white;
+      z-index: 1; /* Ensure the container is behind the navigation menu */
+    }
+
+    .container2::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 40%;
+      right: 60%;
+      background: inherit;
+      filter: blur(10px);
+      z-index: 0;
+    }
+
+
+    h1, p {
+      z-index: 2; /* Ensure text stays on top */
+      position: relative;
+      color: white;
+    }
+
+    p {
+      display: block;
+      margin-top: 10px; /* Add space between h1 and p */
+      color: #f4f4f4;
+    }
+     .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: nowrap; /* Ensure that the cards do not wrap */
+}
+
+.card {
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.card p {
+    margin: 10px 0 0;
+    font-size: 16px;
+}
+     .container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 20px;
+        }
+
+  .container1 {
+    display: flex;
+    align-items: center; /* Aligns image and text vertically in the center */
+}
+
+.container1 img {
+    max-width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.details {
+    display: flex;
+    align-items: flex-start;
+}
+
+.text-content h1 {
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    margin: 0;
+    max-width: 600px;
+}
+
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="https://img.hotimg.com/UR-Frequency-Old-Logo.png" alt="UR-Frequency-Old-Logo" />
+      UR Frequency
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">UR Industries</a></li>
+        <li><a href="#animations">UR Frequency Animation</a></li>
+        <li><a href="#store">UR Store</a></li>
+        <li><a href="#automation">UR Automation Products</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="menu-icon">&#9776;</div>
+  </header>
+
+  <div class="container1">
+    <div class="details">
+        <img src="https://img.hotimg.com/Space-logo-copy.png" alt="Space-logo-copy.png" border="0" />
+        <div class="text-content">
+            <h1>UR Frequency</h1>
+            <p>A research-based company just for fun. Here you get information and share your ideas with people. We appreciate everyone. We give you access to see the sky. Also, we work on research paper publication.</p>
+        </div>
+    </div>
+</div>
+
+  <div class="container2">
+     <h2>Our Services</h2>
+             <div class="card-container">
+    <div class="card" onclick="window.open('https://urmathematician.github.io/urfrequency_celestial/', '_blank')">
+        <img src="https://i.pinimg.com/564x/79/93/52/799352201514bf6b45ead9a5838a14bb.jpg" alt="Celestial">
+        <p>Celestial Data</p>
+    </div>
+    <div class="card" onclick="window.open('')">
+        <img src="https://i.pinimg.com/564x/87/80/18/878018a706488af88d3f41b6584b2d38.jpg" alt="Telescope">
+        <p>Live Telescope</p>
+    </div>
+</div>
+
+            </div>
+     </div>
+      </div>
+        <div class="container-text">
+      <h1>Mission</h1>
+      <p>Our main mission is to gave platform all people which are in space and science and do not get job in sapce companies to explore space. But here everyone can join this and gave idea and upload research that others will know about him and also he can fulfil his dreams by joining us. We don't pay for it but in future we can. You can enjoy this website as Hobby that you see people's research and people review on Your research. Your Research paper is your property you wana publish here or on other side it's yours choice. Here no age matter.</p>
+      <h1>Our Network:</h1>
+      <p>Our Network, chat and social are under construction please enjoy the app store, we'll fix them soon, The social website is just like facebook and you can post about your research and also you can like and comment on post also we have math type so you can easliy type equation or coding in our social app. Chatting app is quite diffrent from social.</p>
+    </div>
+            <div class="container-2">
+    <div class="card" onclick="window.open('')">
+        <img src="https://i.pinimg.com/564x/71/65/ab/7165ab544e4920e1148bed93d7354fc3.jpg" alt="N">
+        <p>Network</p>
+        </div>
+        <div class="card" onclick="window.open('')">
+        <img src="https://i.pinimg.com/564x/2b/8b/1b/2b8b1b58d954d43a4da6e84972e3d40a.jpg" alt="Chat">
+        <p>Chat Online </p>
+        </div>
+                <div class="card" onclick="window.open('')">
+        <img src="https://i.pinimg.com/564x/73/71/69/737169e7c87b4b5cff8ba43bb46eb109.jpg" alt="Foarms">
+        <p>Social</p>
+        </div>
+        <div class="card" onclick="window.open('https://urmathematician.github.io/urstore/', '_blank')">
+            <img src="https://i.pinimg.com/564x/c4/e3/59/c4e3595d852cc9c9a123161a4eb80a5a.jpg" alt="Icon 3">
+            <p>UR app Store</p>
+        </div>
+              <div class="card" onclick onclick="window.open('https://urmathematician.github.io/urtv/', '_blank')">
+            <img src="https://i.pinimg.com/736x/11/07/dc/1107dcb96326f62483b718b0354c966e.jpg" alt="Icon 4">
+            <p>UR Animations for childrens</p>
+        
+        
+        </div>
+        
+        
+      </div>
+              <div class="container-text">
+                  <h1>Our Topics and videos</h1>
+                  <p>You can find topics, videos and research papers according to your need.</p>
+                  <div class="container-2">
+    <div class="card" onclick="window.open('')">
+        <img src="https://i.pinimg.com/564x/8d/fc/e5/8dfce5071c0b2972a4e4e1fa1abd610f.jpg" alt="YT">
+        <p>Youtube Lactures</p>
+        </div>
+        <div class="container-2">
+    <div class="card" onclick="window.open('')">
+        <img src="https://i.pinimg.com/564x/cf/13/0f/cf130f09998c4f42d75a614a0105ba41.jpg" alt="T">
+        <p>Theory Based</p>
+        </div>
+        <div class="container-2">
+    <div class="card" onclick="window.open('')">
+        <img src="https://i.pinimg.com/564x/36/96/33/369633772bf98cc21420dcf19270f93a.jpg" alt="RP">
+        <p>Research Papers</p>
+        </div>
+        </div>
+              </div>
+                  </div>
+                  </div>
+<div class="container-text">
+<h1>IOT Based Projects:</h1>
+<p>Here you'll get video and pdf topics about IOT. Arduino and Resbary Pi. And also use of LoRa module for communication. Also you'll learn how to make arduino based satellite or Rocket model type. You'll learn about how to make IOT based satellite tracker and show celestial data on screen. There are many more amazing projects including Ansys simulations you need to cheak them and enroll in them.</p>
+<div class="container-2">
+    <div class="card" onclick="window.open('')">
+        <img src="https://i.pinimg.com/564x/63/94/73/63947362774f3823efa6df91fbb48a05.jpg" alt="Ansys">
+        <p>Astronmical Ansys</p>
+        </div>
+        <div class="container-2">
+    <div class="card" onclick="window.open('')">
+        <img src="https://i.pinimg.com/564x/29/6f/a9/296fa9fcc41978a34f198b36194d0d6d.jpg" alt="T">
+        <p>IOT based Projects (simple)</p>
+        </div>
+        <div class="container-2">
+    <div class="card" onclick="window.open('')">
+        <img src="https://i.pinimg.com/564x/e1/b5/02/e1b5023de6fef8fec86694794e209b12.jpg" alt="RP">
+        <p>IOT based Projects (Space Related)</p>
+        </div>
+        </div>
+              </div>
+                  </div>
+                  </div>
+                                    </div>
+      <div class="container-text">
+<h1>Login and Upload Your telescope :</h1>
+<p>We are trying to make a network, you can use high zoom quality camera or large telescopes for it. You have two ways to upload. 1st embed your camera or telescope that will be shown in our live telescope service. We add your name and details with this live video. Also when something catch by your telescope then we'll notice it and make it open to research. 2nd method is quite simple just click and upload we'll show these pics and videos on our videos and pics session. But before uploading video keep in mind that things shouldn't be fake. If fake found then your account will be deleted forever. Then you'll never able to upload video again. By clicking on buttons you'll see login page and when you make login then you saw your option upload or embed. For embed telescope there's complete guide for you in this session.</p>
+
+<div class="container-2">
+    <div class="card" onclick="window.open('')">
+        <img src="https://i.pinimg.com/736x/c8/ad/39/c8ad394d1111b934cda3e88b48ccdcfb.jpg" alt="Ansys">
+        <p>Use your telescope as live</p>
+        </div>
+        <div class="container-2">
+    <div class="card" onclick="window.open('')">
+        <img src="https://i.pinimg.com/736x/9e/6b/af/9e6baf0dd3bd7b3049ac4f84e5bb3140.jpg" alt="T">
+        <p>Upload video or Pics</p>
+        </div>
+
+   </div>
+   
+   </div>
+   </div>
+   <div class="container-text">
+<h1>Join us :</h1>
+<p>A simple way to join us is just only fill the foarm and then within one week you'll be notify by email and whatsapp both your login details to join Media of UR Frequency. Here only Google foarm is availabe but soon we'll make our own.</p>
+  <div class="container-2">
+    <div class="card" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSc7bA9N3GcB6scTONfafSHs-jaXPZ9owvgUgxrv4rVQ3EqJew/viewform?usp=sf_link')">
+        <img src="https://i.pinimg.com/564x/26/65/95/2665953169b28e847eefb65f48341cf9.jpg" alt="RP">
+        <p>Join US</p>
+        </div>
+        </div>
+
+   </div>
+  <script>
+    document.querySelector('.menu-icon').addEventListener('click', () => {
+      const navMenu = document.querySelector('.nav-menu');
+      navMenu.classList.toggle('open');
+    });
+  </script>
+
+  <footer class="footer">
+    <p>&copy; 2024 UR Frequency. Just for Hobby</p>
+    <p>
+      Follow us on: 
+      <a href="#" target="_blank">Facebook</a> | 
+      <a href="#" target="_blank">Twitter</a> | 
+      <a href="#" target="_blank">Instagram</a>
+    </p>
+  </footer>
+</body>
+</html>
