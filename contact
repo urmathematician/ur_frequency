@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #2e9, #4454ad);
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+        .container1 {
+      display: flex;
+      flex-direction: column; /* Stack h1 and p vertically */
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin: 0px;
+      background: linear-gradient(to right, black 40%, rgba(0, 0, 0, 0.7) 50%, transparent 60%), url('https://i.pinimg.com/736x/02/2a/53/022a53117588e268d2378ed76f4272f1.jpg');
+      background-size: cover;
+      background-position: right;
+      background-repeat: no-repeat;
+      position: relative;
+      padding: 20px;
+      color: white;
+      z-index: 1; /* Ensure the container is behind the navigation menu */
+    }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #f1f1f1;
+        }
+
+        .contact-box {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-box div {
+            flex-basis: 45%;
+            padding: 20px;
+            margin: 20px 0;
+            background: rgba(25, 355, 25, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .contact-box div:hover {
+            transform: scale(1.05);
+        }
+
+        .contact-info {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #eee;
+        }
+
+        .contact-info i {
+            color: #2980b9;
+            margin-right: 15px;
+        }
+
+        .form-box form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-box form input,
+        .form-box form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 10px;
+            background: #fff;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .form-box form input:focus,
+        .form-box form textarea:focus {
+            outline: none;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+        .form-box form button {
+            padding: 15px;
+            background-color: #8e44ad;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-box form button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Icon Styling */
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 15px;
+            background-color: #2980b9;
+            padding: 20px;
+            border-radius: 50%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        @media screen and (max-width: 768px) {
+            .contact-box div {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="contact-box">
+            <!-- Contact Info Section -->
+            <div class="contact-info">
+                <div class="icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <p><i class="fas fa-phone"></i>WhatsApp +92 303 0830978</p>
+                <p><i class="fas fa-envelope"></i> email = urindustriesubaid@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Adress = Internet</p>
+            </div>
+<div class="container">
+ <div class="container-2">
+<img src="https://img.hotimg.com/UR-Frequency-Old-Logo.png" alt="UR-Frequency-Old-Logo" style="height: 100px; width: auto;" />
+
+<p>Our Services will be ready we need team for work</p>
+
+    </div>
+            <!-- Contact Form Section -->
+          
+
+    <!-- Font Awesome Icons (for icons) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
