@@ -434,11 +434,9 @@
 
    </div>
   <script>
-   dconst menuIcon = document.querySelector('.menu-icon');
-const navMenu = document.querySelector('.nav-menu');
-
-menuIcon.addEventListener('click', () => {
-  navMenu.classList.toggle('open');
+   
+document.querySelector('.menu-icon').addEventListener('click', function() {
+    document.querySelector('.nav-menu').classList.toggle('open');
 });
 
 
