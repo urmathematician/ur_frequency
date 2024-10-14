@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="https://img.hotimg.com/1ef97f5ba533d7bd7.png" type="image/png">
+    <title>UR Frequency Live</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+   body {
+    background-color: black; /* Change background color to black */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: black; /* Set the background to black */
+}
+
+
+#video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+#popup-video {
+    width: 80%;
+    height: auto;
+    max-width: 1000px;
+    border-radius: 15px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+h1 {
+    color: white; /* Text color */
+    background: linear-gradient(90deg, #00C853, #388E3C); /* Smooth gradient for better visual appeal */
+    padding: 1px; /* Adds space around the text */
+    border-radius: 5px; /* Slightly round the corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    font-size: 1rem; /* Adjust font size */
+    text-align: center; /* Center the heading */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect to enhance UX */
+h1:hover {
+    background: linear-gradient(90deg, #388E3C, #00C853); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge the element */
+}
+
+  .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color:#333;
+      color: #fff;
+      position: relative;
+      z-index: 3; /* Ensure header stays on top */
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      animation: slideIn 2s ease-out;
+    }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      animation: logoAnimation 2s ease-in-out;
+    }
+
+    .nav-menu {
+      position: absolute;
+      top: 60px; /* Adjust based on header height */
+      left: 0;
+      background-color: #333;
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+      z-index: 3; /* Ensure the navigation menu appears above the container */
+    }
+
+    .nav-menu ul {
+      display: flex;
+      list-style: none;
+      flex-direction: column; /* Stack items vertically */
+      padding: 10px 20px;
+    }
+
+    .nav-menu ul li {
+      margin: 10px 0; /* Space between items */
+      opacity: 0; /* Initially hidden */
+      transform: translateX(-100%); /* Start from left */
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .nav-menu.open {
+      max-height: 300px; /* Increased height for more items */
+    }
+
+    .nav-menu.open ul li {
+      opacity: 1; /* Fade in */
+      transform: translateX(0); /* Slide in */
+    }
+
+    .nav-menu ul li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .nav-menu ul li a:hover {
+      color: #f4a261;
+    }
+
+    
+    .menu-icon {
+    display: block; /* Ensure it is block for smaller screens */
+    font-size: 30px;
+    cursor: pointer;
+    color: white; /* Make sure it's visible on a dark background */
+    z-index: 4; /* Ensure it's on top of other elements */
+}
+
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-50%);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes logoAnimation {
+      from {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+        .container-text {
+            display:block;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 20px;
+        }.container-2 {
+            display:flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 20px;
+        }
+   
+    /* Footer styles */
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: auto; /* Push footer to the bottom */
+    }
+
+    .footer a {
+      color: #f4a261;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    p{
+        color:white;
+         margin-left: 20px;
+    }
+    .blinking-circle {
+    animation: blink 1s infinite; /* Blinks every second */
+    margin-left: 10px; /* Adds some space between text and emoji */
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1; /* Fully visible */
+    }
+    50% {
+        opacity: 0; /* Fully transparent */
+    }
+}
+
+</style>
+
+<body>
+    <header class="header">
+      
+    <div class="logo">
+      <img src="https://img.hotimg.com/UR-Frequency-Old-Logo.png" alt="UR-Frequency-Old-Logo" />
+      UR Frequency Live Screens
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="https://urmathematician.github.io/ur_frequency/">Home</a></li>
+        <li><a href="">UR Industries</a></li>
+        <li><a href="https://urmathematician.github.io/urtv/">UR Frequency Animation</a></li>
+        <li><a href="https://urmathematician.github.io/urstore/">UR Store</a></li>
+        <li><a href="https://urmathematician.github.io/ubaid/">About Us</a></li>
+        <li><a href="https://urmathematician.github.io/ur_frequency/Contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="menu-icon">&#9776;</div>
+  </header>
+
+<h1>UR Frequency Live <span class="blinking-circle">🔴</span></h1>
+
+    <p>People from different regions of the world, have live telescopes they make their telescopes or cameras live here, You can view for free also support our online people on Instagram and Youtube.  </p>
+    <div id="video-grid">
+        <!-- Dynamically populated video feeds will go here -->
+    </div>
+
+    <!-- Popup modal structure -->
+    <div id="popup-modal" class="modal">
+        <span id="close-modal" class="close">&times;</span>
+        <video id="popup-video" controls autoplay></video>
+    </div>
+<p>You can also donate me for your assistance</p>
+    <script src="script.js">
+        
+        
+    </script>
+    
+    <script>document.addEventListener("DOMContentLoaded", function () {
+    const videoGrid = document.getElementById('video-grid');
+    const popupModal = document.getElementById('popup-modal');
+    const popupVideo = document.getElementById('popup-video');
+    const closeModal = document.getElementById('close-modal');
+
+    // WebSocket or HTTP request to get the video feed URLs
+    let videoFeeds = [
+        'video-feed-1-url',
+        'video-feed-2-url',
+        'video-feed-3-url' // Dynamically populated from server
+    ];
+
+    // Function to add videos to the grid
+    function addVideoFeeds(feeds) {
+        feeds.forEach(feed => {
+            const videoElement = document.createElement('video');
+            videoElement.src = feed;
+            videoElement.controls = true;
+            videoElement.onclick = function () {
+                openPopup(feed);
+            };
+            videoGrid.appendChild(videoElement);
+        });
+    }
+
+    // Function to open popup
+    function openPopup(feed) {
+        popupVideo.src = feed;
+        popupModal.style.display = 'flex';
+    }
+
+    // Close modal when X is clicked
+    closeModal.onclick = function () {
+        popupModal.style.display = 'none';
+        popupVideo.src = ''; // Stop video
+    };
+
+    // Add video feeds to the grid
+    addVideoFeeds(videoFeeds);
+});
+</script>
+
+<script>
+   
+document.querySelector('.menu-icon').addEventListener('click', function() {
+    document.querySelector('.nav-menu').classList.toggle('open');
+});
+
+
+  </script>
+<footer class="footer">
+    <p>&copy; 2024 UR Frequency. All rights reserved.</p>
+    <p>Screens</p>
+      Follow us on: 
+      <a href="https://www.facebook.com/profile.php?id=61565605880105" target="_blank">Facebook</a> | 
+      <a href="https://x.com/ur_frequency" target="_blank">Twitter</a> | 
+      <a href="https://www.instagram.com/ur._frequency/" target="_blank">Instagram</a>
+    </p>
+  </footer>
+</body>
+</html>
