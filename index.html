@@ -206,7 +206,19 @@
       filter: blur(10px);
       z-index: 0;
     }
+.blinking-circle {
+    animation: blink 1s infinite; /* Blinks every second */
+    margin-left: 10px; /* Adds some space between text and emoji */
+}
 
+@keyframes blink {
+    0%, 100% {
+        opacity: 1; /* Fully visible */
+    }
+    50% {
+        opacity: 0; /* Fully transparent */
+    }
+}
 
     h1, p {
       z-index: 2; /* Ensure text stays on top */
@@ -318,6 +330,7 @@
     <div class="card" onclick="window.open('')">
         <img src="https://i.pinimg.com/564x/87/80/18/878018a706488af88d3f41b6584b2d38.jpg" alt="Telescope">
         <p>Live Telescope</p>
+      <p>Live <span class="blinking-circle">🔴</span></p>
     </div>
 </div>
 
