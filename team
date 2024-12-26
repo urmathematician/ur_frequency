@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UR Frequency Team</title>
+    <style>
+     body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: #000; /* Fallback color */
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    animation: spaceAnimation 20s infinite alternate;
+    text-align: center;
+}
+
+        @keyframes spaceAnimation {
+            0% { background-size: 100%; }
+            50% { background-size: 110%; }
+            100% { background-size: 100%; }
+        }
+
+        h1 {
+            margin: 20px 0;
+        }
+
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .team-member {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .team-member:hover {
+            transform: scale(1.05);
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .team-member h3 {
+            margin: 10px 0 5px;
+        }
+
+        .team-member p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meet the Team of UR Frequency</h1>
+    <div class="team-container">
+        <!-- Repeat for each member -->
+        <div class="team-member">
+            <img src="https://img.hotimg.com/uuuuuu.png" alt="Member 1">
+            <h3>Ubaid UR Rehman</h3>
+            <p>Role: Owner, Scientist, Programmer, Researcher and Site engineer</p>
+        </div>
+        <div class="team-member">
+            <img src="https://via.placeholder.com/100" alt="Member 2">
+            <h3>Laiba Momal</h3>
+            <p>Role: CEO, Researcher</p>
+        </div>
+        <div class="team-member">
+            <img src="https://via.placeholder.com/100" alt="Member 3">
+            <h3>Haseeb </h3>
+            <p>Role: Chemistry Resher</p>
+        </div>
+        <div class="team-member">
+            <img src="https://via.placeholder.com/100" alt="Member 4">
+            <h3>Muhammad Shaid Nazir</h3>
+            <p>Role: Islamic Researcher</p>
+        </div>
+        <div class="team-member">
+            <img src="https://via.placeholder.com/100" alt="Member 5">
+            <h3>Asad ur Rehman</h3>
+            <p>Role: Supervisor</p>
+        </div>
+        <div class="team-member">
+            <img src="https://via.placeholder.com/100" alt="Member 6">
+            <h3>Member 6</h3>
+            <p>Role: Astronomer</p>
+        </div>
+        <div class="team-member">
+            <img src="https://via.placeholder.com/100" alt="Member 7">
+            <h3>Member 7</h3>
+            <p>Role: Innovator</p>
+        </div>
+        <div class="team-member">
+            <img src="https://via.placeholder.com/100" alt="Member 8">
+            <h3>Member 8</h3>
+            <p>Role: Designer</p>
+        </div>
+        <div class="team-member">
+            <img src="https://via.placeholder.com/100" alt="Member 9">
+            <h3>Member 9</h3>
+            <p>Role: Programmer</p>
+        </div>
+        <div class="team-member">
+            <img src="https://via.placeholder.com/100" alt="Member 10">
+            <h3>Member 10</h3>
+            <p>Role: Strategist</p>
+        </div>
+        <div class="team-member">
+            <img src="https://via.placeholder.com/100" alt="Member 11">
+            <h3>Member 11</h3>
+            <p>Role: Visionary</p>
+        </div>
+        <div class="team-member">
+            <img src="https://via.placeholder.com/100" alt="Member 12">
+            <h3>Member 12</h3>
+            <p>Role: Innovator</p>
+        </div>
+    </div>
+</body>
+</html>
