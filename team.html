@@ -1,7 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    
+  <link rel="icon" href="https://img.hotimg.com/1ef97f5ba533d7bd7.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UR Frequency Team</title>
     <style>
@@ -25,7 +28,108 @@
             50% { background-size: 110%; }
             100% { background-size: 100%; }
         }
+ .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color:#333;
+      color: #fff;
+      position: relative;
+      z-index: 3; /* Ensure header stays on top */
+    }
 
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      animation: slideIn 2s ease-out;
+    }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      animation: logoAnimation 2s ease-in-out;
+    }
+
+    .nav-menu {
+      position: absolute;
+      top: 60px; /* Adjust based on header height */
+      left: 0;
+      background-color: #333;
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+      z-index: 3; /* Ensure the navigation menu appears above the container */
+    }
+
+    .nav-menu ul {
+      display: flex;
+      list-style: none;
+      flex-direction: column; /* Stack items vertically */
+      padding: 10px 20px;
+    }
+
+    .nav-menu ul li {
+      margin: 10px 0; /* Space between items */
+      opacity: 0; /* Initially hidden */
+      transform: translateX(-100%); /* Start from left */
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .nav-menu.open {
+      max-height: 300px; /* Increased height for more items */
+    }
+
+    .nav-menu.open ul li {
+      opacity: 1; /* Fade in */
+      transform: translateX(0); /* Slide in */
+    }
+
+    .nav-menu ul li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .nav-menu ul li a:hover {
+      color: #f4a261;
+    }
+
+    
+    .menu-icon {
+    display: block; /* Ensure it is block for smaller screens */
+    font-size: 30px;
+    cursor: pointer;
+    color: white; /* Make sure it's visible on a dark background */
+    z-index: 4; /* Ensure it's on top of other elements */
+}
+
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-50%);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes logoAnimation {
+      from {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
         h1 {
             margin: 20px 0;
         }
@@ -66,10 +170,69 @@
             margin: 0;
             font-size: 14px;
         }
+        
+        p {
+    text-align: justify;
+}
+  .container-text {
+            display:block;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 20px;}
+            .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: auto; /* Push footer to the bottom */
+    }
+
+   .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: auto; /* Push footer to the bottom */
+    }
+
+    .footer a {
+      color: #f4a261;
+      text-decoration: none;
+      margin: 0 10px;
+    }
     </style>
 </head>
 <body>
-    <h1>Meet the Team of UR Frequency</h1>
+     <header class="header">
+      
+    <div class="logo">
+      <img src="https://img.hotimg.com/UR-Frequency-Old-Logo.png" alt="UR-Frequency-Old-Logo" />
+      UR Frequency
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="https://urmathematician.github.io/ur_frequency/">Home</a></li>
+        <li><a href="">UR Industries</a></li>
+        <li><a href="https://urmathematician.github.io/urstore/">UR Store</a></li>
+        <li><a href="https://urmathematician.github.io/urtv/new">UR Automation </a></li>
+        <li><a href="https://urmathematician.github.io/ur_frequency/team">Our Team</a></li>
+        <li><a href="https://urmathematician.github.io/ur_frequency/contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="menu-icon">&#9776;</div>
+  </header>
+  
+<img src="https://img.hotimg.com/UR-Frequency-Old-Logo.png" alt="UR-Frequency-Old-Logo.png" style="height: 100px; display: block; margin-left: auto; margin-right: auto;" />
+  
+  
+    <h1>Team of UR Frequency</h1>
+  <div class="container-text">
+    <p>
+        
+        At UR Frequency, our team is a passionate group of innovators dedicated to advancing the frontiers of space research and technology. With expertise spanning satellite design, communication systems, and orbital mechanics, we collaborate to create cutting-edge solutions for modern space exploration. Driven by curiosity and a commitment to excellence, we strive to turn ambitious ideas into groundbreaking realities, shaping the future of space science.
+        
+    </p>
+    </div>
     <div class="team-container">
         <!-- Repeat for each member -->
         <div class="team-member">
@@ -78,7 +241,7 @@
             <p>Role: Owner, Scientist, Programmer, Researcher and Site engineer</p>
         </div>
         <div class="team-member">
-            <img src="https://via.placeholder.com/100" alt="Member 2">
+            <img src="https://i.pinimg.com/736x/6c/c0/7e/6cc07e8e61c1df4e01876a6c750bdef0.jpg" alt="Member 2">
             <h3>Laiba Momal</h3>
             <p>Role: CEO, Researcher</p>
         </div>
@@ -99,7 +262,7 @@
         </div>
         <div class="team-member">
             <img src="https://via.placeholder.com/100" alt="Member 6">
-            <h3>Member 6</h3>
+            <h3>Member</h3>
             <p>Role: Astronomer</p>
         </div>
         <div class="team-member">
@@ -133,5 +296,24 @@
             <p>Role: Innovator</p>
         </div>
     </div>
+    
 </body>
+<footer class="footer">
+    <p>&copy; 2024 UR Frequency. All rights reserved. Made by UR Mathematicain and Laiba Momal</p>
+    <p>Just for Hobby</p>
+      Follow us on: 
+      <a href="https://www.facebook.com/profile.php?id=61565605880105" target="_blank">Facebook</a> | 
+      <a href="https://x.com/ur_frequency" target="_blank">Twitter</a> | 
+      <a href="https://www.instagram.com/ur._frequency/" target="_blank">Instagram</a>
+    </p>
+    </footer>
 </html>
+
+<script>
+    
+    document.querySelector('.menu-icon').addEventListener('click', function() {
+    document.querySelector('.nav-menu').classList.toggle('open');
+});
+
+    
+</script>
