@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -341,6 +340,71 @@
             text-align: center;
             margin-top: 50px;
         }
+.bannar {
+    background: linear-gradient(23deg, #172, #2a5295); /* Stunning gradient background */
+    width: px; /* Small box width */
+            height: 280px; 
+    border-radius: 15px; /* Smooth rounded corners */
+    padding: 50px; /* Generous padding for spacious design */
+    color: white; /* Text color for contrast */
+    font-family: 'Arial', sans-serif; /* Clean font choice */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Soft shadow for 3D effect */
+    text-align: center; /* Center content */
+    overflow: hidden; /* Ensure content fits within the element */
+    position: relative; /* Position for layered effects */
+
+}
+
+/* Adding subtle animated overlay effect */
+.bannar::before {
+    content: "";
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none; /* Doesn't interfere with interactions */
+    mix-blend-mode: overlay; /* Cool light effect */
+    animation: shine 5s infinite linear; /* Animated shine */
+}
+
+@keyframes shine {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+/* High-graphics styling for .bannar-button-communication */
+.bannar-button-communication {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Vibrant gradient */
+    
+    border: none; /* No default borders */
+    color: white; /* White text for contrast */
+    padding: 15px 30px; /* Spacious button padding */
+    border-radius: 25px; /* Fully rounded button */
+    font-size: 18px; /* Large readable font */
+    font-weight: bold; /* Bold font for emphasis */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animations */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+/* Hover effects for the button */
+.bannar-button-communication:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Active button effect */
+.bannar-button-communication:active {
+    transform: scale(0.95); /* Shrink effect on click */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Softer shadow */
+}
     </style>
 </head>
 <body>
@@ -375,9 +439,10 @@
       <ul>
         <li><a href="https://urmathematician.github.io/ur_frequency/">Home</a></li>
         <li><a href="https://urmathematician.github.io/ur_frequency/carriers">Internships and Carrires</a></li>
+                <li><a href="https://urmathematician.github.io/ur_satellite_communications/">UR Statellite Communications</a></li>
         <li><a href="">UR Industries</a></li>
         <li><a href="https://urmathematician.github.io/urstore/">UR Store</a></li>
-        <li><a href="https://urmathematician.github.io/urtv/new">UR Automation </a></li>
+
         <li><a href="https://urmathematician.github.io/ur_frequency/team">Our Team</a></li>
         <li><a href="https://urmathematician.github.io/ur_frequency/contact">Contact Us</a></li>
       </ul>
@@ -394,8 +459,15 @@
         </div>
     </div>
 </div>
-
-  
+    <div class="bannar">
+        <h1>UR Statellite Communications</h1>
+        <p>A perfect way for communication in whole country best internet provider ans also best system of mails</p>
+             <div class="card-container">
+    <div class="card" onclick="window.open(' ', '_blank')">
+        <img src="https://i.pinimg.com/736x/67/35/cf/6735cf12cf8cbd1651a7b8f4f50ee46d.jpg" alt="Communication">
+        <p>UR Communications</p>
+    </div>
+    </div>    </div>
 
   <div class="container2">
      <h2>Our Services</h2>
