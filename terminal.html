@@ -66,8 +66,7 @@
                     redirect('http://urmathematician.github.io/ubaid');
                 } else if (command === 'exit') {
                     redirect('http://www.urfrequency.site');
-                }
-                else if (command === 'live sky') {
+                } else if (command === 'live sky') {
                     redirect('');
                 } else if (command === 'calculator') {
                     terminal.innerHTML += `<div>Calculator mode activated. Enter expressions:</div>`;
@@ -111,15 +110,15 @@
                             terminal.innerHTML += `<div>Invalid name.</div>`;
                         }
                     });
+                } else if (command === 'clear') {
+                    terminal.innerHTML = ''; // Clears the terminal
                 } else {
                     terminal.innerHTML += `<div>Command not recognized.</div>`;
                 }
+
                 terminal.scrollTop = terminal.scrollHeight; // Scroll to bottom
             }
         };
-        else if (command === 'clear') {
-                    terminal.innerHTML = '';
-                }
     </script>
 </body>
 </html>
