@@ -417,6 +417,7 @@
             border: 2px solid #000;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
             z-index: 1000;
+    color:blue;
         }
         .popup iframe {
             width: 100%;
@@ -657,6 +658,14 @@
   
   <script>
 
+   
+document.querySelector('.menu-icon').addEventListener('click', function() {
+    document.querySelector('.nav-menu').classList.toggle('open');
+});
+
+
+  </script>
+<script>
     function openPopup() {
             document.getElementById("popup").style.display = "block";
         }
@@ -664,12 +673,6 @@
         function closePopup() {
             document.getElementById("popup").style.display = "none";
         }
-   
-document.querySelector('.menu-icon').addEventListener('click', function() {
-    document.querySelector('.nav-menu').classList.toggle('open');
-});
-
-
   </script>
 <footer class="footer">
     <p>&copy; 2024 UR Frequency. All rights reserved. </p>
