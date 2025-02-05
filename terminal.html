@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="https://i.pinimg.com/736x/72/31/6c/72316c2c42f1bd7fae53246e871d7de6.jpg" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UR Terminal</title>
     <style>
@@ -63,7 +64,10 @@
                     redirect('http://www.urfrequency.site');
                 } else if (command === 'ubaid') {
                     redirect('http://urmathematician.github.io/ubaid');
-                } else if (command === 'live sky') {
+                } else if (command === 'exit') {
+                    redirect('http://www.urfrequency.site');
+                }
+                else if (command === 'live sky') {
                     redirect('');
                 } else if (command === 'calculator') {
                     terminal.innerHTML += `<div>Calculator mode activated. Enter expressions:</div>`;
@@ -113,6 +117,9 @@
                 terminal.scrollTop = terminal.scrollHeight; // Scroll to bottom
             }
         };
+        else if (command === 'clear') {
+                    terminal.innerHTML = '';
+                }
     </script>
 </body>
 </html>
