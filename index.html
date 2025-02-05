@@ -533,12 +533,18 @@
 <p> video = Intended to redirect, but the link is missing </p>  
 <p> satellite = Prompts for name, password, and topic selection; Satellite page </p>  
 <p> clear = Clears the terminal </p>   
-
-
-
-
     </div>
-</div>
+
+<script>
+    function openPopup() {
+            document.getElementById("popup").style.display = "block";
+        }
+        
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+  </script>
+             </div>
 
             </div>
      </div>
@@ -664,15 +670,6 @@ document.querySelector('.menu-icon').addEventListener('click', function() {
 });
 
 
-  </script>
-<script>
-    function openPopup() {
-            document.getElementById("popup").style.display = "block";
-        }
-        
-        function closePopup() {
-            document.getElementById("popup").style.display = "none";
-        }
   </script>
 <footer class="footer">
     <p>&copy; 2024 UR Frequency. All rights reserved. </p>
