@@ -19,6 +19,7 @@
     body {
       font-family: Arial, sans-serif;
       display: flex;
+      
       flex-direction: column;
       min-height: 100vh; /* Ensure footer stays at the bottom */
       background-color:black;
@@ -140,18 +141,19 @@
    
     /* Footer styles */
     .footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 20px 0;
-      margin-top: auto; /* Push footer to the bottom */
+   background-color: green;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        
     }
 
-    .footer a {
-      color: #f4a261;
-      text-decoration: none;
-      margin: 0 10px;
-    }
+    
 
     .container {
       display: flex;
@@ -180,6 +182,45 @@
       filter: blur(10px);
       z-index: 0;
     }
+    .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.text-content {
+    padding: 10px;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.text-content h1 {
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    margin: 0;
+    max-width: 100%;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .details {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        padding: 10px;
+            text-align: justify;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
 .container2 {
       display: flex;
       flex-direction: column; /* Stack h1 and p vertically */
@@ -225,6 +266,7 @@
       z-index: 2; /* Ensure text stays on top */
       position: relative;
       color: white;
+          text-align: justify;
     }
 
     p {
@@ -241,7 +283,7 @@
 }
 
 .card {
-    text-align: center;
+       text-align: justify;
     margin: 10px;
     cursor: pointer;
     transition: transform 0.3s;
@@ -280,63 +322,14 @@
     align-items: flex-start;
 }
 
-.text-content h1 {
-    margin-bottom: 10px;
-}
 
-.text-content p {
-    margin: 0;
-    max-width: 600px;
-}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solar System Animation</title>
-    <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-        }
-
-        .solar-system {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            z-index: -1;
-        }
-
-        .planet {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 14px;
-        }
-
-        @keyframes orbit {
-            from {
-                transform: rotate(0deg) translateX(var(--orbit-radius)) rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg) translateX(var(--orbit-radius)) rotate(-360deg);
-            }
-        }
-
+       
         .content {
             position: relative;
             z-index: 1;
             color: white;
             font-family: Arial, sans-serif;
-            text-align: center;
+              text-align: justify;
             margin-top: 50px;
         }
 .bannar {
@@ -434,24 +427,7 @@
         }
   </style>
 </head>
-<body>
-    <div class="solar-system">
-        <!-- Sun -->
-        <div class="planet" style="width: 100px; height: 100px; background: yellow;">Sun</div>
 
-        <!-- Planets -->
-        <div class="planet" style="--orbit-radius: 100px; width: 20px; height: 20px; background: gray; animation: orbit 2.4s linear infinite;">Mercury</div>
-        <div class="planet" style="--orbit-radius: 150px; width: 30px; height: 30px; background: orange; animation: orbit 6.2s linear infinite;">Venus</div>
-        <div class="planet" style="--orbit-radius: 200px; width: 35px; height: 35px; background: blue; animation: orbit 10s linear infinite;">Earth</div>
-        <div class="planet" style="--orbit-radius: 300px; width: 40px; height: 40px; background: red; animation: orbit 18.8s linear infinite;">Mars</div>
-        <div class="planet" style="--orbit-radius: 400px; width: 50px; height: 50px; background: brown; animation: orbit 118.6s linear infinite;">Jupiter</div>
-        <div class="planet" style="--orbit-radius: 500px; width: 45px; height: 45px; background: lightblue; animation: orbit 294.6s linear infinite;">Saturn</div>
-        <div class="planet" style="--orbit-radius: 550px; width: 40px; height: 40px; background: cyan; animation: orbit 840.2s linear infinite;">Uranus</div>
-        <div class="planet" style="--orbit-radius: 600px; width: 30px; height: 30px; background: darkblue; animation: orbit 1647.9s linear infinite;">Neptune</div>
-    </div>
-
-</body>
-</html>
 
   </style>
 </head>
@@ -469,8 +445,7 @@
         
         <li><a href="https://www.urfrequency.site/deg">Online degree and Certificates</a></li>
                 <li><a href="https://www.urfrequency.site/sat">UR Statellite Communications</a></li>
-        <li><a href="">UR Industries</a></li>
-        <li><a href="https://urmathematician.github.io/urstore/">UR Store</a></li>
+        
 
         <li><a href="https://www.urfrequency.site/team">Our Team</a></li>
         <li><a href="https://www.urfrequency.site/contact">Contact Us</a></li>
@@ -481,7 +456,8 @@
 
   <div class="container">
     <div class="details">
-        <img src="https://img.hotimg.com/UR-Frequency-Old-Logo.png" border="0" />
+        <img src="https://img.hotimg.com/UR-Frequency-Old-Logo.png" class="logo" style="height: 150px; width: auto;" />
+
         <div class="text-content">
             <h1>UR Frequency</h1>
             <p>A research-based company just for fun. Here you get information and share your ideas with people. We appreciate everyone. We give you access to see the sky. Also, we work on research paper publication. Here you found diffrent live telescopes from diffrent regions of the world also you can make your camera as live telescope and can do research. Here your age doesn't matter your knowladge matters. For children we have diffrent logins to get basic knowladge but for adults we have research papers </p>
@@ -514,11 +490,19 @@
         <img src="https://i.pinimg.com/736x/88/9a/e6/889ae659e4a73a4c7cb536872b76e5e2.jpg" alt="Telescope">
         <p>UR Operating System</p>
       <p>Linux based</p>
-                      </div>  
+      
+                      </div> 
+                      
                    <div class="card" onclick="window.open('https://www.urfrequency.site/deg')">
         <img src="https://i.pinimg.com/736x/05/52/33/055233840d2586c3695965548b955b91.jpg" alt="University">
         <p>Certifications and Degrees</p>
-                   </div>                   </div>                   </div>                   </div>                   </div>
+                   </div>                   </di>                   </div>    <div class="card" onclick="window.open('https://www.urfrequency.site/meenbooks')">
+        <img src="https://i.pinimg.com/736x/23/f3/76/23f3764a13e3fcb5f1db7a757a230e53.jpg" alt="University">
+        <p>Free Books</p></div>
+                   </div>
+                   </div>      
+                  
+                   </div>            </div></div></div>       </div>
             <div class="container-text">
       <h1>Mission</h1>
       <p>Our main mission is to gave platform all people which are in space and science and do not get job in sapce companies to explore space. But here everyone can join this and gave idea and upload research that others will know about him and also he can fulfil his dreams by joining us. We don't pay for it but in future we can. You can enjoy this website as Hobby that you see people's research and people review on Your research. Your Research paper is your property you wana publish here or on other side it's yours choice. Here no age matter.</p>
@@ -647,7 +631,7 @@ document.querySelector('.menu-icon').addEventListener('click', function() {
   
 <footer class="footer">
     <p>&copy; 2024 UR Frequency. All rights reserved. </p>
-      Email us: <a href="mailto:contact@urfrequency.site">contact@urfrequency.site</a>
+      Email us: contact@urfrequency.site.  (Service not avaliable yet)</a>
     </p>
   </footer>
 </body>
