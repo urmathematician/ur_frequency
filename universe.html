@@ -2,151 +2,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="icon" href="https://img.hotimg.com/1ef97f5ba533d7bd7.png" type="image/png">
-    <title>The Book of UR Chapter 7</title>
-    <style>
-       body {
-            background-color: #f4f4f4; /* Light background for body */
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .gliese-list li {
-    color: white;
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="https://img.hotimg.com/1ef97f5ba533d7bd7.png" type="image/png">
+  <meta name="google-site-verification" content="azthnYNKg3HDplNjwJN9vymVU-P18dp3iyE3FNFKORc" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7905341714144701"
+     crossorigin="anonymous"></script>
+  <title>UR Frequency</title>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      
+      flex-direction: column;
+      min-height: 100vh; /* Ensure footer stays at the bottom */
+      background-color:black;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color:#333;
+      color: #fff;
+      position: relative;
+      z-index: 3; /* Ensure header stays on top */
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      animation: slideIn 2s ease-out;
+    }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      animation: logoAnimation 2s ease-in-out;
+    }
+
+    .nav-menu {
+      position: absolute;
+      top: 60px; /* Adjust based on header height */
+      left: 0;
+      background-color: #333;
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+      z-index: 3; /* Ensure the navigation menu appears above the container */
+    }
+
+    .nav-menu ul {
+      display: flex;
+      list-style: none;
+      flex-direction: column; /* Stack items vertically */
+      padding: 10px 20px;
+    }
+
+    .nav-menu ul li {
+      margin: 10px 0; /* Space between items */
+      opacity: 0; /* Initially hidden */
+      transform: translateX(-100%); /* Start from left */
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .nav-menu.open {
+      max-height: 300px; /* Increased height for more items */
+    }
+
+    .nav-menu.open ul li {
+      opacity: 1; /* Fade in */
+      transform: translateX(0); /* Slide in */
+    }
+
+    .nav-menu ul li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .nav-menu ul li a:hover {
+      color: #f4a261;
+    }
+
+    
+    .menu-icon {
+    display: block; /* Ensure it is block for smaller screens */
+    font-size: 30px;
+    cursor: pointer;
+    color: white; /* Make sure it's visible on a dark background */
+    z-index: 4; /* Ensure it's on top of other elements */
 }
-.gliese-list li {
-    color: white;
-}
-.alpha-centauri-list li {
-    color: white;
-}
-body {
-    background-color: #f0f0f0; /* Light background for body */
-}
-.header {
-            background-color: black !important;
-            display: flex;
-            justify-content: space-between;
+
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-50%);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes logoAnimation {
+      from {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+        .container-text {
+            display:block;
             align-items: center;
-            padding: 10px 20px;
-            color: #fff;
-            position: relative;
-            z-index: 3;
+            justify-content: flex-start;
+            margin: 20px;
         }
+   
+    /* Footer styles */
+    .footer {
+   background-color: green;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+    }
 
-        .logo {
-            display: flex;
-            align-items: center;
-            font-size: 24px;
-            font-weight: bold;
-            animation: slideIn 2s ease-out;
-        }
-
-        .logo img {
-            width: 40px;
-            height: 40px;
-            margin-right: 10px;
-            animation: logoAnimation 2s ease-in-out;
-        }
-
-        .nav-menu {
-            position: absolute;
-            top: 60px;
-            left: 0;
-            background-color: #333;
-            width: 100%;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease;
-            z-index: 3;
-        }
-
-        .nav-menu ul {
-            display: flex;
-            list-style: none;
-            flex-direction: column;
-            padding: 10px 20px;
-        }
-
-        .nav-menu ul li {
-            margin: 10px 0;
-            opacity: 0;
-            transform: translateX(-100%);
-            transition: opacity 0.5s ease, transform 0.5s ease;
-        }
-
-        .nav-menu.open {
-            max-height: 300px;
-        }
-
-        .nav-menu.open ul li {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        .nav-menu ul li a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .nav-menu ul li a:hover {
-            color: #f4a261;
-        }
-
-        .menu-icon {
-            display: block;
-            font-size: 30px;
-            cursor: pointer;
-            color: white;
-            z-index: 4;
-        }
-
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateY(-50%);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes logoAnimation {
-            from {
-                opacity: 0;
-                transform: scale(0.5);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
-        .footer {
-            background-color: green;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: auto;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .navbar {
-            background-color: #333;
-            color: white;
-            padding: 15px;
-            text-align: center;
-            font-size: 24px;
-        }
-
-        .container {
+    
+.container {
             max-width: 800px;
             margin: 20px auto;
             background: blue;
@@ -240,42 +244,19 @@ th, td {
     margin: 0 auto;
 }
 
-        h1,p{
-           color:white; 
-           text-align: left;
-           margin: 10px 0;
+
+
+
+        h1{
+            color:lime;
+            
+            
         }
                 h2{
-                       color:red;
-                        text-align: left;
-        }        h3{
-            
-        }        h4{
+            color:red;
             
         }
-        p3{
-                       color:red;
-                        text-align: left;
-        }  
-         table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-            background: white;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-        }
-        th {
-            background-color: #333;
-            color: white;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-        b{
+b{
             color:yellow;
              text-align: left;
     margin: 10px 0;    }
@@ -301,14 +282,42 @@ color: orange;
     color: #555;
     margin-top: 5px;
 }
-    </style>
+ x{
+color: lime;
+    display: block; /* Ensures it behaves like a paragraph */
+    text-align: left; /* Aligns text to the left */
+    margin: 10px 0;
+        }
+        figcaption {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+p{
+    color: white;
+    text-align:justify;
+}
+.text-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+  </style>
+</head>
+
+
+  </style>
 </head>
 <body>
-    
-         
+  <header class="header">
+      
     <div class="logo">
       <img src="https://img.hotimg.com/UR-Frequency-Old-Logo.png" alt="UR-Frequency-Old-Logo" />
-      UR Frequency
+      Universe 
     </div>
     <nav class="nav-menu">
       <ul>
@@ -325,6 +334,11 @@ color: orange;
     </nav>
     <div class="menu-icon">&#9776;</div>
   </header>
+<body>
+    
+    
+
+    
     <div class="container">
         <div class="chapter-title">Universe and Multiverse
  ( introduction)
@@ -1197,7 +1211,9 @@ confirm these details. It is also called
 Green Giant and star light also looks
 like green here.</p>
 <v>Gliese-581G:</v>
-<p>Gliese 581g, It orbit around the red
+<p>
+    <z>Location:</z>
+    It orbit around the red
 Dwarf star (GJ-581 or Gliza) in 37
 Earth days, it is 20.7 light years away
 from us (earth) in the constellation
@@ -1207,14 +1223,20 @@ life ability like Earth and a short movie
 (zarmina's world) was made in
 Australia on it in 2021.Gliese 581g is located within the
 habitable zone (also known as the
-Goldilocks zone) of its host star (Gliza),
-here in this planet liquid also exist with
+Goldilocks zone) of its host star (Gliza).
+    <z>Atmosphere:</z>
+In this planet liquid also exist with
 cloudy atmosphere means it also have
-rain on have rain on its atmosphere and
-its temperature is nearly equal to Russia
+rain on have rain on its atmosphere 
+    <z>Temperature:</z>
+Temperature is nearly equal to Russia
 and Green Land (209K to 228 K =
-−64 °C to −45 °C = −83 °F to −49 °F). Its size is 3 to 4 times of Earth and its
-orbital period is 37 earth days.It is tidily locked planet means its one
+−64 °C to −45 °C = −83 °F to −49 °F).
+    <z>Size and period:</z>
+Its size is 3 to 4 times of Earth and its
+orbital period is 37 earth days.
+    <z>Tidily locked:</z>
+It is tidily locked planet means its one
 face is always towards the star while
 have always night. Means that one part
 of planet is hot while other is extremely
@@ -1227,7 +1249,23 @@ can live between day and night</p>
     <figcaption>Gliese-581G</figcaption>
      </figure>
      <v>Kepler-452b (Earth Cusion)</v>
-<p>Kepler-452b, also known as Earth's cousin is an, but I call it Earth 2.0 or Earth’s Twin. Exoplanet that was discovered by NASA's Kepler space telescope in 2015 and claimed as more habitable than Gliesce581G.Kepler-452b orbits a star called Kepler-452, which is very similar to our Sun. This star is located about 1,400 light-years away from Earth in the constellation Cygnus. If there are asteroids or comets around this Star then its very difficult to survive here. Means there’s no planet like Jupiter that pulls and make the path of comet as curvy. If a comet hit by this planet then same thing will happens to us that happened with Dinosaurs when they ended.  Kepler-452b is located in the habitable zone of its host star. This star have size a little bigger than our Sun. And Kepler-452b is (one AU ± Tolerance) away from its star. Have temperature  ( −8 °C to 12 °C).Its size is 1.6 times of size of Earth. Refer as Super Earth. No one knows about its core, we don’t have any idea about it, if core is rotating means that it have magnetic field and it can save us from Kepler-452’s cosmic rays and Kepler-452’s solar flare. But if there’s no such core means that we have to faced the solar flares and we can die.  Its orbital period is 385 Earth days that’s nearly equal to Earth year.</p>
+<p>
+    <z>Introduction:</z>
+    Also known as Earth's cousin is an, but I call it Earth 2.0 or Earth’s Twin.
+    <z>Discovery:</z>
+    Exoplanet that was discovered by NASA's Kepler space telescope in 2015 and claimed as more habitable than Gliesce581G.
+    <z>Star:</z>
+    Kepler-452b orbits a star called Kepler-452, which is very similar to our Sun.
+    <z>Location:</z>
+    This star is located about 1,400 light-years away from Earth in the constellation Cygnus. 
+    <z>Danger:</z>
+    If there are asteroids or comets around this Star then its very difficult to survive here. Means there’s no planet like Jupiter that pulls and make the path of comet as curvy. If a comet hit by this planet then same thing will happens to us that happened with Dinosaurs when they ended. 
+    <z>Zone, Size and Temperature:</z>
+    Kepler-452b is located in the habitable zone of its host star. This star have size a little bigger than our Sun. And Kepler-452b is (one AU ± Tolerance) away from its star. Have temperature  ( −8 °C to 12 °C).Its size is 1.6 times of size of Earth. Refer as Super Earth.
+    <z>Core:</z>
+    No one knows about its core, we don’t have any idea about it, if core is rotating means that it have magnetic field and it can save us from Kepler-452’s cosmic rays and Kepler-452’s solar flare. But if there’s no such core means that we have to faced the solar flares and we can die. 
+    <z>Period:</z>
+    Its orbital period is 385 Earth days that’s nearly equal to Earth year.</p>
         <figure class="image-container">
     <img src="https://i.pinimg.com/736x/c2/e3/43/c2e343597954523e712794e80f953f43.jpg">
     <figcaption>Kepler-452b</figcaption>
@@ -1977,8 +2015,10 @@ Quasars are extremely luminous and energetic centers of galaxies and they are po
     <p>See, we don't get 3, 6, and 9. Again, see (1+6 = 7), (7+7 = 14), and (1+4 = 5) and (5+5 = 10 and (1+0 = 1) that makes my answer).</p>
 
 </div>
+
+    
 </body>
- 
+
   <script>
 
    
@@ -1997,4 +2037,5 @@ document.querySelector('.menu-icon').addEventListener('click', function() {
       Email us: contact@urfrequency.site.  (Service not avaliable yet)</a>
     </p>
   </footer>
+</body>
 </html>
